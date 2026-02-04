@@ -1,15 +1,15 @@
 [project]
 name = "tgedr-dataops-abs"
-version = "0.0.1"
-description = "this is a template for a python package"
+version = "0.0.3"
+description = "data operations related code - abstractions"
 authors = [
-    {name = "developer",email = "developer@email.com"}
+    {name = "joao tiago viegas",email = "3536754+jtviegas@users.noreply.github.com"}
 ]
 readme = "README.md"
 requires-python = ">=3.11"
 
 dependencies = [
-    "pandas>=2.3.0",
+    "great_expectations==1.9.1",
 ]
 [dependency-groups]
 dev = [
