@@ -10,6 +10,8 @@ data operations related code - abstractions
 ## motivation
 abstract constructs to depict commonly use cases in data engineering context. Think about commonly accepted abstract classes and interfaces that can be implemented and extended according to different requirements and constraints.
 
+## installation
+        `pip install tgedr-dataops-abs`
 
 ## package namespaces and its contents
 
