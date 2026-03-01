@@ -503,7 +503,7 @@ wheels = [
 
 [[package]]
 name = "great-expectations"
-version = "1.9.1"
+version = "1.9.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "altair" },
@@ -525,9 +525,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "tzlocal" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/b5/11/15125a66ccc55884d60b04f88dc820e151682439cf8c4b39392fbdc0a3a3/great_expectations-1.9.1.tar.gz", hash = "sha256:34e795aa616e72e82b7ea360262c986e24c5fafaacec145d844a14adc3dff327", size = 36299092, upload-time = "2025-11-20T23:18:08.73Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/ae/45/62ac41f57d50ddfdbb4493793dc45737667a9ffebb6f2a90f131dfa41e36/great_expectations-1.9.3.tar.gz", hash = "sha256:25889f6174dbb1ed68c0e06b58befe9ceb9623852cf491419c44b4897fa43ad6", size = 36302751, upload-time = "2025-12-11T04:31:21.723Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ba/27/baeb74f94336eaf124208a5915d03a085dcb4c2ae335afa60cb416dc8245/great_expectations-1.9.1-py3-none-any.whl", hash = "sha256:ab2b40fb3bfda378d09635afc5e1c2c1a2bc3bcf555f4c371b73b381ad0399e1", size = 4941509, upload-time = "2025-11-20T23:18:05.999Z" },
+    { url = "https://files.pythonhosted.org/packages/42/13/9859274ac9f0cef5603a23bc52b00f5c991bcfed7ed5e6dc38012e756333/great_expectations-1.9.3-py3-none-any.whl", hash = "sha256:bd39e5d5cf8eafe31bb1d246b4b8f5bb7c81dd5c397879a1a3b502949c6bf66c", size = 4942325, upload-time = "2025-12-11T04:31:19.359Z" },
 ]
 
 [[package]]
@@ -1765,7 +1765,7 @@ wheels = [
 
 [[package]]
 name = "tgedr-dataops-abs"
-version = "0.0.2"
+version = "0.0.4"
 source = { editable = "." }
 dependencies = [
     { name = "great-expectations" },
@@ -1786,7 +1786,7 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "great-expectations", specifier = "==1.9.1" }]
+requires-dist = [{ name = "great-expectations", specifier = "~=1.9.3" }]
 
 [package.metadata.requires-dev]
 dev = [

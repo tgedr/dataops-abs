@@ -1,6 +1,6 @@
 [project]
 name = "tgedr-dataops-abs"
-version = "0.0.3"
+version = "0.0.4"
 description = "data operations related code - abstractions"
 authors = [
     {name = "joao tiago viegas",email = "3536754+jtviegas@users.noreply.github.com"}
@@ -9,7 +9,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 
 dependencies = [
-    "great_expectations==1.9.1",
+    "great_expectations~=1.9.3",
 ]
 [dependency-groups]
 dev = [
