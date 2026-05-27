@@ -189,6 +189,23 @@ publish(){
   info "$msg"
 }
 
+publish_release(){
+  info "[publish_release|in]"
+
+  _pwd=`pwd`
+  cd "$this_folder"
+
+  local version=$(python -c "import tomllib; d=tomllib.load(open('pyproject.toml','rb')); print(d['project']['version'])")
+  gh release create "$version"  dist/* --title "$version" --generate-notes
+  local result="$?"
+  [[ ! "$result" -eq "0" ]] && err "[publish_release] release failed"
+
+  cd "$_pwd"
+  local msg="[publish_release|out] => ${result}"
+  [[ ! "$result" -eq "0" ]] && info "$msg" && exit 1
+  info "$msg"
+}
+
 sca_check_safety(){
   info "[sca_check_safety|in] (${1:0:3})"
   _pwd=`pwd`
@@ -339,7 +356,8 @@ case "$1" in
     build
     ;;
   publish)
-    publish
+    # publish
+    publish_release
     ;;
   tag)
     git_tag_and_push "$2" "$3"

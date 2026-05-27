@@ -1,6 +1,6 @@
 [project]
 name = "tgedr-dataops-abs"
-version = "0.0.7"
+version = "0.0.8"
 description = "data operations related code - abstractions"
 authors = [
     {name = "joao tiago viegas",email = "3536754+jtviegas@users.noreply.github.com"}
@@ -29,8 +29,8 @@ dev = [
 # run = "tgedr.pycommons.entrypoint:entrypoint" 
 
 [build-system]
-requires = ["setuptools>=78.1.0", "wheel>=0.45.1"]
-build-backend = "setuptools.build_meta"
+requires = ["uv-build>=0.6,<1.0"]
+build-backend = "uv_build"
 
 [tool.setuptools.packages.find]
 where = ["src"]
