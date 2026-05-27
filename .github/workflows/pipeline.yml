@@ -46,3 +46,4 @@ jobs:
         fi
       env:
         PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+        GH_TOKEN: ${{ github.token }}
