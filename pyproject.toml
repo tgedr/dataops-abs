@@ -1,6 +1,6 @@
 [project]
 name = "tgedr-dataops-abs"
-version = "0.0.7"
+version = "0.0.8"
 description = "data operations related code - abstractions"
 authors = [
     {name = "joao tiago viegas",email = "3536754+jtviegas@users.noreply.github.com"}
