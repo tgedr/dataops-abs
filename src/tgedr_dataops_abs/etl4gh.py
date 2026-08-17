@@ -1,4 +1,9 @@
 
+"""ETL4GH module for GitHub Actions ETL workflows.
+
+Provides abstract base class for Extract, Transform, Load operations
+specifically designed for GitHub Actions environments.
+"""
 from abc import ABC
 import logging
 import os
