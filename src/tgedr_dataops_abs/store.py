@@ -16,6 +16,10 @@ class NoStoreException(StoreException):
     """Exception raised when a requested store item is not found."""
 
 
+class EmptyStoreException(StoreException):
+    """Exception raised when the store is empty."""
+
+
 class StoreInterface(metaclass=abc.ABCMeta):
     """Interface for store implementations.
 
